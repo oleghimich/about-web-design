@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #d5faff;
+  color: #000;
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.container {
+  background-color: #b6ffc2;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  vertical-align: top;
+  overflow-y: scroll;
+  transition: all 0.5s ease;
+}
+
+.container:hover {
+  box-shadow: 0px 0px 5px #330022;
+}
+
+.container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.container img {
+  width: 60px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/* Відео секція */
+.welcome {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.welcome .content {
+  position: relative;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 1;
+}
+
+/* Секція з блоками HTML/CSS/JS */
+section:nth-of-type(2) {
+  background-color: #7eff87;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.more_info {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0000ee;
+  text-decoration: underline;
+}
+
+/* Секція Теги */
+.tags {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  padding: 50px 0;
+  background-color: #d5faff;
+}
+
+.tag-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 60%;
+  background-color: #7eff87;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: 0.3s ease;
+}
+
+.tag-title {
+  font-size: 20px;
+  font-weight: bold;
+  width: 100px;
+  height: 100px;
+  background-color: #1b2c3b;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.tag-description {
+  display: none;
+  text-align: left;
+  animation: slideInFromRight 0.5s ease-out;
+  max-width: 100%;
+}
+
+.tag-container:hover .tag-description {
+  display: inline-block;
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #29433496;
+    color: #d8fff1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 2px 12px #29433460;
+    padding: 0 40px;
+    backdrop-filter: blur(4px);
+}
+
+.nav-logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #84b780;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: #d8fff1;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.25s, color 0.25s;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus {
+    background: #84b788;
+    color: #294334;
+}
+
+
+footer {
+    background-color: #294334;
+    color: #d8fff1;
+    padding: 40px 0 0;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-block {
+    flex: 1;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+.footer-block h3 {
+    color: #84b780;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-block ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-block ul li {
+    margin-bottom: 8px;
+}
+
+.footer-block ul li a {
+    color: #d8fff1;
+    text-decoration: none;
+    transition: color 0.25s;
+}
+
+.footer-block ul li a:hover {
+    color: #84b788;
+}
+
+.footer-block p {
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #84b78850;
+    font-size: 14px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    padding-top: 60px;
+}
+
+section {
+    padding: 60px 0;
+}
